@@ -13,7 +13,7 @@ Function Here($emptyBodyOrFile, $emptyFileOrBody, $newFile) {
         Write-Output $emptyFileOrBody
         return
       } else {
-        "$emptyFileOrBody" | Out-FileUtf8NoBom $newFile
+        $emptyFileOrBody | Out-FileUtf8NoBom $newFile
         return
       }
     }
@@ -22,7 +22,7 @@ Function Here($emptyBodyOrFile, $emptyFileOrBody, $newFile) {
       Write-Output $emptyBodyOrFile
       return
     } else {
-      "$emptyBodyOrFile" | Out-FileUtf8NoBom $emptyFileOrBody
+      $emptyBodyOrFile | Out-FileUtf8NoBom $emptyFileOrBody
       return
     }
   }
