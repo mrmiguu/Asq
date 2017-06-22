@@ -1,4 +1,4 @@
 # Asq
-At-sign quote (@')
+At-sign quote  @'
 
 A text editor for Powershell
