@@ -7,7 +7,7 @@ Function Here($emptyBodyOrFile, $emptyFileOrBody, $newFile) {
   } elseif (Test-Path ($emptyBodyOrFile -replace "`r`n|`n", $null)) {
     if ($emptyFileOrBody -eq $null) {
       Get-Content $emptyBodyOrFile | Set-Clipboard
-      [System.Windows.Forms.SendKeys]::SendWait('here $emptyBodyOrFile @"')
+      [System.Windows.Forms.SendKeys]::SendWait("here $emptyBodyOrFile "+'@"')
     } else {
       if ($newFile -eq $null) {
         Write-Output $emptyFileOrBody
