@@ -2,4 +2,4 @@
 
 A text editor for Powershell
 
-![alt text](here_demo.png)
+![alt text](here_final.png)
