@@ -1,2 +1,4 @@
-# caqe
-Commercial-at quote editor
+# Asq
+At-sign quote (@')
+
+A text editor for Powershell
